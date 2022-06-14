@@ -1,0 +1,40 @@
+{
+  "name": "web-dial",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@mantine/core": "^4.2.9",
+    "@mantine/dates": "^4.2.9",
+    "@mantine/dropzone": "^4.2.9",
+    "@mantine/form": "^4.2.9",
+    "@mantine/hooks": "^4.2.9",
+    "@mantine/modals": "^4.2.9",
+    "@mantine/next": "^4.2.9",
+    "@mantine/notifications": "^4.2.9",
+    "@mantine/prism": "^4.2.9",
+    "@mantine/spotlight": "^4.2.9",
+    "autoprefixer": "^10.4.7",
+    "dayjs": "^1.11.3",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "^8.4.14",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "tailwindcss": "^3.1.2",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.1.8"
+}
