@@ -15,6 +15,7 @@ importers:
       '@mantine/prism': ^4.2.9
       '@mantine/spotlight': ^4.2.9
       autoprefixer: ^10.4.7
+      cookies-next: ^2.0.4
       dayjs: ^1.11.3
       eslint-config-custom: workspace:*
       postcss: ^8.4.14
@@ -34,6 +35,7 @@ importers:
       '@mantine/prism': 4.2.9_63cvt2vz7vd74rxlntivoobvt4
       '@mantine/spotlight': 4.2.9_63cvt2vz7vd74rxlntivoobvt4
       autoprefixer: 10.4.7_postcss@8.4.14
+      cookies-next: 2.0.4
       dayjs: 1.11.3
       eslint-config-custom: link:packages/eslint-config-custom
       postcss: 8.4.14
@@ -415,6 +417,14 @@ packages:
       '@babel/runtime': 7.18.3
     dev: true
 
+  /@types/cookie/0.4.1:
+    resolution: {integrity: sha512-XW/Aa8APYr6jSVVA1y/DEIZX0/GMKLEVekNG727R8cs56ahETkRAy/3DR7+fJyh7oUgGwNQaRfXCun0+KbWY7Q==}
+    dev: true
+
+  /@types/node/16.11.39:
+    resolution: {integrity: sha512-K0MsdV42vPwm9L6UwhIxMAOmcvH/1OoVkZyCgEtVu4Wx7sElGloy/W7kMBNe/oJ7V/jW9BVt1F6RahH6e7tPXw==}
+    dev: true
+
   /acorn-node/1.8.2:
     resolution: {integrity: sha512-8mt+fslDufLYntIoPAaIMUe/lrbrehIiwmR3t2k9LljIzoigEPF27eLk2hy8zSGzmR/ogr7zbRKINMo1u0yh5A==}
     dependencies:
@@ -526,6 +536,19 @@ packages:
 
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    dev: true
+
+  /cookie/0.4.2:
+    resolution: {integrity: sha512-aSWTXFzaKWkvHO1Ny/s+ePFpvKsPnjc551iI41v3ny/ow6tBG5Vd+FuqGNhh1LxOmVzOlGUriIlOaokOvhaStA==}
+    engines: {node: '>= 0.6'}
+    dev: true
+
+  /cookies-next/2.0.4:
+    resolution: {integrity: sha512-fqjwJNksW/WEu8ou1SEXJCKYyg7nrQRsjlfbIF5tp96SrQq1Fzome1To27tPxhoPN/vgFuzCt573Pri9bE+H+g==}
+    dependencies:
+      '@types/cookie': 0.4.1
+      '@types/node': 16.11.39
+      cookie: 0.4.2
     dev: true
 
   /core-util-is/1.0.3:
