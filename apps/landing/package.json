@@ -10,13 +10,14 @@
   },
   "dependencies": {
     "next": "12.0.8",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "ui": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^17.0.12",
-    "@types/react": "18.0.1",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "^18.0.5",
     "config": "workspace:*",
     "eslint": "7.32.0",
     "eslint-config-custom": "workspace:*",
