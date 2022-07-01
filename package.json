@@ -1,45 +1,54 @@
 {
-  "name": "web-dial",
-  "version": "0.0.0",
-  "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "@mantine/core": "^4.2.9",
-    "@mantine/dates": "^4.2.9",
-    "@mantine/dropzone": "^4.2.9",
-    "@mantine/form": "^4.2.9",
-    "@mantine/hooks": "^4.2.9",
-    "@mantine/modals": "^4.2.9",
-    "@mantine/next": "^4.2.9",
-    "@mantine/notifications": "^4.2.9",
-    "@mantine/prism": "^4.2.9",
-    "@mantine/spotlight": "^4.2.9",
-    "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5",
-    "autoprefixer": "^10.4.7",
-    "cookies-next": "^2.0.4",
-    "dayjs": "^1.11.3",
-    "eslint-config-custom": "workspace:*",
-    "postcss": "^8.4.14",
-    "prettier": "latest",
-    "prettier-plugin-tailwindcss": "^0.1.11",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "tailwindcss": "^3.1.2",
-    "turbo": "latest"
-  },
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
-  },
-  "packageManager": "pnpm@7.1.8"
+    "name": "web-dial",
+    "version": "0.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint",
+        "test": "turbo run test",
+        "check:eslint": "turbo run check:eslint",
+        "check:typescript": "turbo run check:typescript",
+        "check:prettier": "prettier --list-different --config .prettierrc.js --ignore-path .gitignore --write \"**/*.{ts,tsx,md}\"",
+        "prepare": "husky install",
+        "clean": "turbo run clean && rm -rf node_modules",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "@mantine/core": "^4.2.9",
+        "@mantine/dates": "^4.2.9",
+        "@mantine/dropzone": "^4.2.9",
+        "@mantine/form": "^4.2.9",
+        "@mantine/hooks": "^4.2.9",
+        "@mantine/modals": "^4.2.9",
+        "@mantine/next": "^4.2.9",
+        "@mantine/notifications": "^4.2.9",
+        "@mantine/prism": "^4.2.9",
+        "@mantine/spotlight": "^4.2.9",
+        "@types/react": "^18.0.14",
+        "@types/react-dom": "^18.0.5",
+        "autoprefixer": "^10.4.7",
+        "classnames": "^2.3.1",
+        "cookies-next": "^2.1.1",
+        "dayjs": "^1.11.3",
+        "eslint-config-custom": "workspace:*",
+        "husky": "^8.0.1",
+        "postcss": "^8.4.14",
+        "prettier": "^2.7.1",
+        "prettier-plugin-tailwindcss": "^0.1.11",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.3.0",
+        "tailwindcss": "^3.1.2",
+        "turbo": "latest"
+    },
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=14.0.0"
+    },
+    "packageManager": "pnpm@7.1.8"
 }
