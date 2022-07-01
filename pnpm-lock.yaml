@@ -137,6 +137,7 @@ importers:
 
   apps/landing:
     specifiers:
+      '@lottiefiles/react-lottie-player': ^3.4.7
       '@types/node': ^17.0.12
       '@types/react': 18.0.1
       '@types/react-dom': ^18.0.5
@@ -152,6 +153,7 @@ importers:
       typescript: ^4.5.3
       ui: workspace:*
     dependencies:
+      '@lottiefiles/react-lottie-player': 3.4.7_react@18.2.0
       next: 12.2.0_biqbaboplfbrettd7655fr4n2y
       next-seo: 5.4.0_24lkarzjpo3wcmj2o6qyrkug4y
       react: 18.2.0
@@ -1799,6 +1801,15 @@ packages:
       '@jridgewell/resolve-uri': 3.0.8
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@lottiefiles/react-lottie-player/3.4.7_react@18.2.0:
+    resolution: {integrity: sha512-KqkwRiCQPDNzimsXnNSgeJjJlZQ6Fr9JE3OtZdOaGrXovZJ+zDeZNxIwxID8Up0eAdm4zJjudOSc5EJSiGw9RA==}
+    peerDependencies:
+      react: 16 - 18
+    dependencies:
+      lottie-web: 5.9.5
+      react: 18.2.0
+    dev: false
 
   /@mantine/core/4.2.11_3ehejxrev6zxyr2cqzngvysewi:
     resolution: {integrity: sha512-4nLZLIbtiu1uVEqfdxqkEr/gLbI/RC4+8C2j3d9zFs+vPbIuKi2R/LSbwXfFePEPSfb90RqLlXiVZY2z17jwFA==}
@@ -4643,6 +4654,10 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+
+  /lottie-web/5.9.5:
+    resolution: {integrity: sha512-4GI1jC2+YV9DyTXEz4HnAuaoOMT6yBs9KxG50rsmM7eRjUhyBpbETSVuzHAkamfP+nyNuQ84jhQxDnfjBrJdQg==}
+    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
