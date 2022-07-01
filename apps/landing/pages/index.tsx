@@ -1,9 +1,5 @@
-import { Button } from "@mantine/core";
+import React from 'react';
 
 export default function Web() {
-  return (
-    <div>
-
-    </div>
-  );
+    return <div>aAaaaaaaa</div>;
 }
