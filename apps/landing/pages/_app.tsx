@@ -42,7 +42,6 @@
 //                 {/* <!-- Microsoft Tiles --> */}
 //                 <meta name="msapplication-config" content="browserconfig.xml" />
 
-
 //                 {/* <!-- Helps prevent duplicate content issues --> */}
 //                 <link rel="canonical" href="http://example.com/2017/09/a-new-article-to-read.html" />
 //                 {/* <script
@@ -89,7 +88,10 @@ export default function App(props: AppProps) {
         <>
             <Head>
                 <title>Page title</title>
-                <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+                <meta
+                    name="viewport"
+                    content="minimum-scale=1, initial-scale=1, width=device-width"
+                />
             </Head>
 
             <MantineProvider

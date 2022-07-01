@@ -1,14 +1,30 @@
 {
-  "pipeline": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
-    },
-    "lint": {
-      "outputs": []
-    },
-    "dev": {
-      "cache": false
+    "pipeline": {
+        "build": {
+            "dependsOn": ["^build"],
+            "outputs": ["dist/**", ".next/**"]
+        },
+        "test": {
+            "outputs": ["coverage/**"],
+            "dependsOn": []
+        },
+        "check:eslint": {
+            "cache": false
+        },
+        "check:typescript": {
+            "cache": false
+        },
+        "check:prettier": {
+            "cache": false
+        },
+        "lint": {
+            "outputs": []
+        },
+        "dev": {
+            "cache": false
+        },
+        "clean": {
+            "cache": false
+        }
     }
-  }
 }

@@ -1,27 +1,28 @@
 {
-  "name": "landing",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "12.0.8",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "ui": "workspace:*"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.12",
-    "@types/react": "18.0.1",
-    "config": "workspace:*",
-    "eslint": "7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "next-transpile-modules": "9.0.0",
-    "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
-  }
+    "name": "landing",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "12.0.8",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "ui": "workspace:*"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.12",
+        "@types/react": "18.0.1",
+        "@types/react-dom": "^18.0.5",
+        "config": "workspace:*",
+        "eslint": "7.32.0",
+        "eslint-config-custom": "workspace:*",
+        "next-transpile-modules": "9.0.0",
+        "tsconfig": "workspace:*",
+        "typescript": "^4.5.3"
+    }
 }
